@@ -1,3 +1,5 @@
+(function() {
+
 Discourse.Dialect.inlineBetween({
     start: '\[yuml\]',
     stop: '\[\/yuml\]',
@@ -7,3 +9,5 @@ Discourse.Dialect.inlineBetween({
         return "<img src=\"" + uri + "\" />";
     }
 })
+    
+})();
