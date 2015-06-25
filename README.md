@@ -1,7 +1,7 @@
 # discourse-yuml
 Add ability to write yUML class diagrams directly into a discourse post.
 
-![Example of yUML diagram in discourse](https://raw.githubcontent.com/sekhat/discourse-yuml/master/docs/Example.png)
+![Example of yUML diagram in discourse](https://raw.githubusercontent.com/sekhat/discourse-yuml/master/docs/Example.png)
 
 ## Installation
 
@@ -47,5 +47,5 @@ A yUML diagram can be specified as so
 
 Which should give you a diagram like so
 
-![Picture of post editor with example](https://raw.githubcontent.com/sekhat/discourse-yuml/master/docs/ExampleUsage.png)
+![Picture of post editor with example](https://raw.githubusercontent.com/sekhat/discourse-yuml/master/docs/ExampleUsage.png)
 
