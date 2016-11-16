@@ -4,4 +4,4 @@
 # authors: Sekhat Temporus
 # url: https://github.com/sekhat/discourse-yuml
 
-register_asset "javascript/yuml_dialect.js", :server_side
+register_asset "javascripts/yuml_dialect.js", :server_side

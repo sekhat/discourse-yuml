@@ -35,6 +35,10 @@ From your main discourse do:
     git clone https://github.com/sekhat/discourse-yuml.git
     cd ..
 
+### Rebake Posts
+
+    rake posts:rebake
+
 ## Limitations
 Currently, it only supports yUML class diagrams.
 
