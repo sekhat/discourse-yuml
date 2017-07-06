@@ -3,5 +3,3 @@
 # version: 0.1.0
 # authors: Sekhat Temporus
 # url: https://github.com/sekhat/discourse-yuml
-
-register_asset "javascripts/yuml_dialect.js", :server_side
