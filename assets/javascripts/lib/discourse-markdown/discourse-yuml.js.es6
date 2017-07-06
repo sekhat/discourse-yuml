@@ -1,14 +1,14 @@
-import { registerOption  } from 'pretty-text/pretty-text'
+import { registerOption } from 'pretty-text/pretty-text'
 
 registerOption((siteSettings, opts) => {
-  opts.features["discourse-yuml"] = true;
+    opts.features["discourse-yuml"] = true;
 });
 
-function replaceYumlDiagram (text) {
-    while (text !== (text = text.replace(/\[yuml\]([\s\S]*)\[\/yuml\]/ig, function (match, contents) {
-        var uri = "http://yuml.me/diagram/scruffy/class/" + encodeURIComponent(contents.replace(/\n/g, ","));
-        return "<img src=\"" + uri + "\" />";
-    })));
+function replaceYumlDiagram(text) {
+    while (text !== (text = text.replace(/\[yuml\]([\s\S]*?)\[\/yuml\]/ig, function(match, contents) {
+            var uri = "http://yuml.me/diagram/scruffy/class/" + encodeURIComponent(contents.replace(/\n/g, ","));
+            return "<img src=\"" + uri + "\" />";
+        })));
     return text;
 }
 
