@@ -53,3 +53,43 @@ Which should give you a diagram like so
 
 ![Picture of post editor with example](https://raw.githubusercontent.com/sekhat/discourse-yuml/master/docs/ExampleUsage.png)
 
+You can now specify the type of diagram you wish to draw via the `type` argument
+
+For example to start a yuml activity diagram you can do the following:
+
+    [yuml type=activity]
+    (start)->[a]
+    [a]->(end)
+    [/yuml]
+
+The following types are supported:
+
+  * `class` - For class diagrams
+  * `activity` - For activity diagrams
+  * `usecase` - For use case diagrams
+
+If no type is specified, then `class` is used by default
+
+The different diagram styles for yuml.me can also be specified via the `style` argument
+
+For example
+
+    [yuml style=plain]
+    [Class]->[AnotherClass]
+    [/yuml]
+
+The supported styles are:
+
+  * `scruffy`
+  * `plain`
+  * `boring`
+
+If none is specified then by default `scruffy` is used.
+
+These options can also be combined:
+
+    [yuml type=class style=plain]
+    [Class]->[AnotherClass]
+    [/yuml]
+
+Enjoy
